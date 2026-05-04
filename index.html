@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -463,4 +464,471 @@
             <span>Rizal West District, Sorsogon City</span>
         </li>
     </ul>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online CV - Rence Muñoz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .cv-container {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* ========== NEW NAVIGATION BAR ========== */
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar .logo {
+            color: #3498db;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #3498db;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #3498db;
+        }
+        /* ======================================= */
+
+        /* Header Section */
+        .cv-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ecf0f1;
+            display: block;
+        }
+
+        .header-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .header-info h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #3498db;
+        }
+
+        .header-info p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Common Section Styles */
+        .cv-section {
+            padding: 40px 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cv-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .section-title i {
+            color: #3498db;
+            font-size: 1.6rem;
+        }
+
+        /* ========== PROJECTS SECTION ========== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-item {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #eee;
+            transition: transform 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* CHANGED: Max width set para hindi lumaki masyado */
+        .project-img-container {
+            max-width: 80%; 
+            margin: 0 auto 15px auto;
+        }
+
+        .project-img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-img:hover {
+            opacity: 0.9;
+        }
+
+        .project-item h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .project-item h4 a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .project-item h4 a:hover {
+            color: #3498db;
+        }
+
+        .project-item p {
+            font-size: 0.95rem;
+            color: #555;
+            text-align: left;
+        }
+        /* ===================================== */
+
+        /* ========== CERTIFICATES SECTION ========== */
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .certificate-item {
+            text-align: center;
+        }
+
+        .certificate-img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certificate-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        /* ========================================== */
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .skill-category ul {
+            list-style-position: inside;
+            padding-left: 10px;
+        }
+
+        .skill-category ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+            font-size: 1rem;
+        }
+
+        .skill-category ul li::before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Contact Section */
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.1rem;
+        }
+
+        .contact-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-list li i {
+            color: #3498db;
+            width: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .cv-footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav-links {
+                gap: 20px;
+            }
+            
+            .certificates-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-img-container {
+                max-width: 100%; 
+            }
+        }
+
+        @media (max-width: 600px) {
+            .cv-header {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .header-info h1 {
+                font-size: 2rem;
+            }
+
+            .cv-section {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- ========== NEW NAVIGATION BAR ========== -->
+        <nav class="navbar">
+            <div class="logo">RENCE</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- ======================================= -->
+
+        <!-- Header Section -->
+        <header class="cv-header">
+            <div class="profile-pic">
+                <img src="c:/Users/DR42300091/Downloads/47be0333-3ccc-400d-82e7-0fb1cafef637.jpg" alt="Rence Muñoz - Profile Picture">
+            </div>
+            <div class="header-info">
+                <h1>RENCE MUÑOZ</h1>
+                <h2>4th Year BS Information Technology</h2>
+                <p>Computer Communication Development Institute</p>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="cv-section" id="about">
+            <h3 class="section-title"><i class="fas fa-user"></i> About Me</h3>
+            <p>I am a 4th-year Information Technology student who is passionate about learning and creating innovative technological solutions. I have developed skills in web development, database management, and technical problem-solving. My goal is to apply my knowledge and skills to contribute to meaningful projects that can help communities and the industry grow.</p>
+        </section>
+
+        <!-- ========== PROJECTS SECTION ========== -->
+        <section class="cv-section" id="projects">
+            <h3 class="section-title"><i class="fas fa-briefcase"></i> Projects</h3>
+            
+            <div class="projects-grid">
+                <div class="project-item">
+                    <!-- CONTAINER PARA KONTROLIN ANG SIZE -->
+                    <div class="project-img-container">
+                        <a href="PASTE_LINK_MO_DITO" target="_blank">
+                            <img src="c:\Users\DR42300091\Pictures\Screenshots\Screenshot 2026-05-04 110521.png" alt="Project Name" class="project-img">
+                        </a>
+                    </div>
+                    
+                    <h4>
+                        <a href="PASTE_LINK_MO_DITO" target="_blank">ARCHCAPS: CCDI CAPSTONE E-LIBRARY</a>
+                    </h4>
+                    
+                    <p>The ARCHCAPS: CCDI Capstone E-Library system is designed to address the long-standing problem of storing, organizing, and accessing capstone projects within the Computer Communication Development Institute (CCDI). For years, the institution has relied heavily on physical copies of research outputs, which are kept in shelves, folders, or filing cabinets. As more students complete their capstone projects each year, these storage areas become overcrowded and difficult to maintain. </p>
+                </div>
+            </div>
+        </section>
+        <!-- ===================================== -->
+
+        <!-- Skills Section -->
+        <section class="cv-section" id="skills">
+            <h3 class="section-title"><i class="fas fa-cogs"></i> Skills</h3>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>PHP / Python / Java</li>
+                        <li>MySQL / SQL Server</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Other Skills</h4>
+                    <ul>
+                        <li>Web Design & Development</li>
+                        <li>System Analysis & Design</li>
+                        <li>Problem Solving & Troubleshooting</li>
+                        <li>Teamwork & Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="cv-section" id="certificates">
+            <h3 class="section-title"><i class="fas fa-certificate"></i> Certificates</h3>
+            
+            <div class="certificates-grid">
+                <div class="certificate-item">
+                    <img src="c:/Users/DR42300091/Downloads/JavaScript_Essentials_2_certificate_rencemunoz95-gmail-com_067d682d-edfc-4b53-acf0-f899a458bf0b/1777860401691-aaac45cf-7d44-480a-b143-946bb8e229a5_1.jpg" 
+                         alt="JavaScript Essentials Certificate" class="certificate-img">
+                </div>
+
+                <div class="certificate-item">
+                    <img src="c:/Users/DR42300091/Downloads/_certificate_rencemunoz95-gmail-com_cff0f1d5-da0a-4310-9255-2b9c7d037415_page-0001.jpg" 
+                         alt="Introduction to Cybersecurity Certificate" class="certificate-img">
+                </div>
+
+                <div class="certificate-item">
+                    <img src="c:\Users\DR42300091\Downloads\Python_Essentials_1_certificate_rencemunoz95-gmail-com_6d887d1d-d130-47ab-9ad9-6503c5002ada_page-0001.jpg" 
+                         alt="Python Essentials 1 Certificate" class="certificate-img">
+                </div>
+
+                <div class="certificate-item">
+                    <img src="c:\Users\DR42300091\Downloads\Python_Essentials_2_certificate_rencemunoz95-gmail-com_d634c5de-6981-4a3b-80b2-f600015b1ea3_page-0001.jpg" 
+                         alt="Python Essentials 2 Certificate" class="certificate-img">
+                </div>
+
+                <div class="certificate-item">
+                    <img src="c:\Users\DR42300091\Downloads\JavaScript_Essentials_2_certificate_rencemunoz95-gmail-com_067d682d-edfc-4b53-acf0-f899a458bf0b_page-0001.jpg" 
+                         alt="JavaScript Essentials 2 Certificate" class="certificate-img">
+                </div>
+
+                <div class="certificate-item">
+                    <img src="c:\Users\DR42300091\Downloads\RENCE L. MUÑOZ-2026-DTCBWEB2565_page-0001.jpg" 
+                         alt="New Certificate" class="certificate-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+<section class="cv-section" id="contact">
+    <h3 class="section-title"><i class="fas fa-address-book"></i> Contact</h3>
+    <ul class="contact-list">
+        <li>
+            <i class="fas fa-envelope"></i>
+            <span>rencemunoz95@gmail.com</span>
+        </li>
+        <li>
+            <i class="fas fa-phone"></i>
+            <span>0977 417 6127</span>
+        </li>
+        <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Rizal West District, Sorsogon City</span>
+        </li>
+    </ul>
+>>>>>>> d5f33a0 (initial commit)
 </section>
